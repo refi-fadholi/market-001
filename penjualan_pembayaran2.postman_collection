@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "8fa0dc08-9018-46a6-8cd1-70e67cf78e1a",
+		"name": "Penjualan-Pembayaran Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41722043"
+	},
+	"item": [
+		{
+			"name": "http://sample-001.test/api/pembayaran",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"penjualan_id\": 2,\r\n    \"tanggal_pembayaran\": \"2025-02-02\",\r\n    \"jumlah\": 100000\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://sample-001.test/api/pembayaran",
+					"protocol": "http",
+					"host": [
+						"sample-001",
+						"test"
+					],
+					"path": [
+						"api",
+						"pembayaran"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://sample-001.test/api/penjualans",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://sample-001.test/api/penjualans",
+					"protocol": "http",
+					"host": [
+						"sample-001",
+						"test"
+					],
+					"path": [
+						"api",
+						"penjualans"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
